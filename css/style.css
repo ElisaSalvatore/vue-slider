@@ -9,22 +9,20 @@ body {
     background-color: darkcyan;
 }
 
-#app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 h1 {
     padding: 20px;
     font-size: 50px;
     color: #fff;
 }
 
+.slider-immagini {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
 button {
-    display: flex;
-    justify-content: center;
     width: 40px;
     height: 33px;
     font-size: 20px;
@@ -35,25 +33,11 @@ button {
     color: #fff;
     border-radius: 50px;
 }
-.slider-immagini {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 600px;
-    height: 300px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
 
 .slider-immagini > img {
     width: 600px;
     height: 300px;
     border-radius: 20px;
-}
-
-.points-slider {
-   display: flex;
-   flex-direction: row;
 }
 
 .point {
@@ -62,4 +46,12 @@ button {
     border-radius: 50%;
     margin: 10px 5px;
     background-color: #fff;
+}
+
+.active {
+    background-color: #fff;
+}
+
+.disable {
+    background-color: #ccc;
 }
