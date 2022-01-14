@@ -14,14 +14,15 @@
 
     <div id="app">
         
+        
         <div class="slider-immagini">
-            <button @click="prevImage" class="prev-image">PREV</button>
+            <button @click="prevImage" class="prev-image">&#8592;</button>
 
-            <img v-bind:src="images[currentIndex]">
+            <img v-bind:src="images[currentIndex]"> 
 
-            <button @click="nextImage" class="next-image">NEXT</button>
+            <button @click="nextImage" class="next-image">&#8594;</button>
         </div>
-
+        
     </div>
     
     <script src="./js/script.js"></script>
