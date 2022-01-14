@@ -14,8 +14,11 @@
 
     <div id="app">
         
-        <div v-bind:src="sliderImages.image" class="slider-immagini">
+        <div class="slider-immagini">
             <button @click="prevImage" class="prev-image">PREV</button>
+
+            <img v-bind:src="images[currentIndex]">
+
             <button @click="nextImage" class="next-image">NEXT</button>
         </div>
 
