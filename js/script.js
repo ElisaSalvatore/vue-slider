@@ -34,6 +34,5 @@ new Vue ({
         // startRotation: function() { //------ AUTOPLAY CON TIMER
         // this.timer = setInterval(this.nextImage, 3000);
         // },
-
     }
 });

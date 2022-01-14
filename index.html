@@ -14,7 +14,6 @@
 
     <div id="app">
         
-        
         <div class="slider-immagini">
             <button @click="prevImage" class="prev-image">&#8592;</button>
 
@@ -22,7 +21,9 @@
 
             <button @click="nextImage" class="next-image">&#8594;</button>
         </div>
-        
+        <div class="points-slider">
+            <div class="point" v-for="(image, i) in images"></div>
+        </div> 
     </div>
     
     <script src="./js/script.js"></script>
