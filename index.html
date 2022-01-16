@@ -11,20 +11,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <h1>Vue Paint Slider</h1>
+    <h1><b>Vue Paint Slider</b></h1>
 
     <div id="app" class="d-flex flex-column justify-content-center align-items-center">
         
         <div class="slider-immagini d-flex justify-content-between align-items-center">
-            <button @click="prevImage" class="prev-image d-flex justify-content-center align-items-center">&#8592;</button>
+            <button @click="prevImage" class="prev-image d-flex justify-content-center align-items-center"></button>
 
             <img v-bind:src="images[currentIndex]"> 
 
-            <button @click="nextImage" class="next-image d-flex justify-content-center align-items-center">&#8594;</button>
+            <button @click="nextImage" class="next-image d-flex justify-content-center align-items-center"></button>
         </div>
 
         <div class="points-slider d-flex">
-            <div v-for="(image, i) in images"  class="point"></div>
+            <div v-for="(image, i) in images" v-bind:class="['point', i == currentIndex ? 'active': 'disable']"></div>
         </div> 
     </div>
     
